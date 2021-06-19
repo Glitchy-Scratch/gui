@@ -9,7 +9,7 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v2
     - name: Setup, Build and Install Dependencies using NPM
-      run: npm install && npm run build
+      run: npm cache clean --force && npm install && npm run build
     - name: Run NPM test
       run: npm test
       env:

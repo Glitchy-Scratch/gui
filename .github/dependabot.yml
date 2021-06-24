@@ -8,4 +8,5 @@ updates:
   open-pull-requests-limit: 99
   reviewers:
     - r4356th
+  versioning-strategy: increase
     

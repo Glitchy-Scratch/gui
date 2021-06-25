@@ -8,8 +8,8 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v2
-    - name: Setup, Build and Install Dependencies using NPM
-      run: npm install && npm run build
+    - name: Install Dependencies using NPM
+      run: npm install
     - name: Run NPM test
       run: npm test
       env:

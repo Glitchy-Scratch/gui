@@ -26,7 +26,7 @@
     "url": "git+ssh://git@github.com/LLK/scratch-gui.git"
   },
   "dependencies": {
-    "arraybuffer-loader": "^1.0.6",
+    "arraybuffer-loader": "^1.0.8",
     "autoprefixer": "^9.0.1",
     "base64-loader": "1.0.0",
     "bowser": "1.9.4",

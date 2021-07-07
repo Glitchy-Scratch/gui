@@ -1,0 +1,21 @@
+on: 
+  push:
+    branches:
+      - develop
+
+name: Site Deployment
+jobs:
+  deploy:
+    name: Deployment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup, Build and Install Dependencies using Node.JS
+        run: npm install && npm run build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./build
+            

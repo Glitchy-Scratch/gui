@@ -10,6 +10,7 @@ import {getEventXY} from '../lib/touch-utils';
 import VideoProvider from '../lib/video/video-provider';
 import {SVGRenderer as V2SVGAdapter, BitmapAdapter as V2BitmapAdapter} from 'scratch-svg-renderer';
 import RubberCanvas from '../lib/rubber-canvas';
+import {BitmapAdapter as V2BitmapAdapter} from 'scratch-svg-rend
 
 import StageComponent from '../components/stage/stage.jsx';
 
@@ -71,7 +72,6 @@ class Stage extends React.Component {
             // default color
             this.props.vm.renderer.draw();
         }
-        this.props.vm.attachV2SVGAdapter(new V2SVGAdapter());
         this.props.vm.attachV2BitmapAdapter(new V2BitmapAdapter());
     }
     componentDidMount () {

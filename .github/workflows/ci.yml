@@ -1,0 +1,17 @@
+name: Node.JS CI
+
+on: [push, pull_request]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Install Dependencies using NPM
+      run: npm install
+    - name: Run NPM test
+      run: npm test
+      env:
+        CI: true
+        

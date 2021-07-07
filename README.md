@@ -1,16 +1,16 @@
 # gui
-#### Scratch GUI is a set of React components that comprise the interface for creating and running Scratch 3.0 projects
+#### Glitchy Scratch GUI is a set of React components that comprise the interface for creating and running Glitchy Scratch projects
 
 ## Installation
 This requires you to have Git and Node.js installed.
 
-In your own node environment/application:
+In your own Node environment/application:
 ```bash
-npm install https://github.com/LLK/scratch-gui.git
+npm install https://github.com/Glitchy-Scratch/gui.git
 ```
 If you want to edit/play yourself:
 ```bash
-git clone https://github.com/LLK/scratch-gui.git
+git clone https://github.com/Glitchy-Scratch/gui.git
 cd scratch-gui
 npm install
 ```
@@ -27,32 +27,31 @@ npm start
 ```
 Then go to [http://localhost:8601/](http://localhost:8601/) - the playground outputs the default GUI component
 
-## Developing alongside other Scratch repositories
+## Developing alongside other Glitchy Scratch repositories
 
-### Getting another repo to point to this code
+### Getting another repository to point to this code
 
+If you wish to develop `glitchyscratch-gui` alongside other Glitchy Scratch repositories that depend on it, you may wish
+to have the other repositories use your local `glitchyscratch-gui` build instead of fetching the current production
+version of the glitchyscratch-gui that is found by default using `npm install`.
 
-If you wish to develop `scratch-gui` alongside other scratch repositories that depend on it, you may wish
-to have the other repositories use your local `scratch-gui` build instead of fetching the current production
-version of the scratch-gui that is found by default using `npm install`.
-
-Here's how to link your local `scratch-gui` code to another project's `node_modules/scratch-gui`.
+Here's how to link your local `glitchyscratch-gui` code to another project's `node_modules/scratch-gui`.
 
 #### Configuration
 
-1. In your local `scratch-gui` repository's top level:
+1. In your local `glitchyscratch-gui` repository's top level:
     1. Make sure you have run `npm install`
     2. Build the `dist` directory by running `BUILD_MODE=dist npm run build`
     3. Establish a link to this repository by running `npm link`
 
 2. From the top level of each repository (such as `scratch-www`) that depends on `scratch-gui`:
     1. Make sure you have run `npm install`
-    2. Run `npm link scratch-gui`
+    2. Run `npm link glitchyscratch-gui`
     3. Build or run the repository
 
 #### Using `npm run watch`
 
-Instead of `BUILD_MODE=dist npm run build`, you can use `BUILD_MODE=dist npm run watch` instead. This will watch for changes to your `scratch-gui` code, and automatically rebuild when there are changes. Sometimes this has been unreliable; if you are having problems, try going back to `BUILD_MODE=dist npm run build` until you resolve them.
+Instead of `BUILD_MODE=dist npm run build`, you can use `BUILD_MODE=dist npm run watch` instead. This will watch for changes to your `glitchyscratch-gui` code, and automatically rebuild when there are changes. Sometimes this has been unreliable; if you are having problems, try going back to `BUILD_MODE=dist npm run build` until you resolve them.
 
 #### Oh no! It didn't work!
 
@@ -71,9 +70,9 @@ See [jest cli docs](https://facebook.github.io/jest/docs/en/cli.html#content) fo
 
 ### Running tests
 
-*NOTE: If you're a windows user, please run these scripts in Windows `cmd.exe`  instead of Git Bash/MINGW64.*
+*NOTE: If you're a Windows user, please run these scripts in Windows `cmd.exe`  instead of Git Bash/MINGW64.*
 
-Before running any tests, make sure you have run `npm install` from this (scratch-gui) repository's top level.
+Before running any tests, make sure you have run `npm install` from this repository's top level.
 
 #### Main testing command
 
@@ -102,7 +101,7 @@ $(npm bin)/jest --runInBand test/unit/components/button.test.jsx
 
 #### Running integration tests
 
-Integration tests use a headless browser to manipulate the actual html and javascript that the repo
+Integration tests use a headless browser to manipulate the actual HTML and JavaScript that the repo
 produces. You will not see this activity (though you can hear it when sounds are played!).
 
 Note that integration tests require you to first create a build that can be loaded in a browser:
@@ -174,7 +173,7 @@ npm install  --no-optional --save-dev react-intl-redux@^0.7
 The dependency itself might have more missing dependencies, which will show up like this:
 
 ```
-user@machine:~/sources/scratch/scratch-gui (491-translatable-library-objects)$ npm install  --no-optional --save-dev react-intl-redux@^0.7
+user@machine:~/sources/glitchyscratch/glitchyscratch-gui (491-translatable-library-objects)$ npm install  --no-optional --save-dev react-intl-redux@^0.7
 scratch-gui@0.1.0 /media/cuideigin/Linux/sources/scratch/scratch-gui
 ├── react-intl-redux@0.7.0
 └── UNMET PEER DEPENDENCY react-responsive@5.0.0
@@ -197,12 +196,11 @@ If you run into npm install errors, try these steps:
 4. run `npm install` again
 
 ## Publishing to GitHub Pages
-You can publish the GUI to github.io so that others on the Internet can view it.
-[Read the wiki for a step-by-step guide.](https://github.com/LLK/scratch-gui/wiki/Publishing-to-GitHub-Pages)
+You can publish the GUI to github.io so that others on the Internet can view it. 
 
 ## Understanding the project state machine
 
-Since so much code throughout scratch-gui depends on the state of the project, which goes through many different phases of loading, displaying and saving, we created a "finite state machine" to make it clear which state it is in at any moment. This is contained in the file src/reducers/project-state.js .
+Since so much code throughout glitchyscratch-gui depends on the state of the project, which goes through many different phases of loading, displaying and saving, we created a "finite state machine" to make it clear which state it is in at any moment. This is contained in the file src/reducers/project-state.js .
 
 It can be hard to understand the code in src/reducers/project-state.js . There are several types of data and functions used, which relate to each other:
 
@@ -254,6 +252,3 @@ Here's what will happen in the project state machine:
 5. The `LOADING_VM_WITH_ID` state. In src/lib/vm-manager-hoc.jsx, we load the `projectData` into Scratch's virtual machine ("the vm").
 6. When loading is done, src/lib/vm-manager-hoc.jsx dispatches the `DONE_LOADING_VM_WITH_ID` action. This transitions the state from `LOADING_VM_WITH_ID` to `SHOWING_WITH_ID`
 7. The `SHOWING_WITH_ID` state. Now the project appears normally and is playable and editable.
-
-## Donate
-We provide [Scratch](https://scratch.mit.edu) free of charge, and want to keep it that way! Please consider making a [donation](https://secure.donationpay.org/scratchfoundation/) to support our continued engineering, design, community, and resource development efforts. Donations of any size are appreciated. Thank you!

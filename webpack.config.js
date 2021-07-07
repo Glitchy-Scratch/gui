@@ -65,7 +65,7 @@ const base = {
                     importLoaders: 1,
                     localIdentName: '[name]_[local]_[hash:base64:5]',
                     camelCase: true,
-                    esModule: false,
+                    esModule: false
                 }
             }, {
                 loader: 'postcss-loader',

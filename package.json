@@ -1,6 +1,6 @@
 {
   "name": "glitchyscratch-gui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GraphicaL User Interface for creating and running Scratch 3.0 projects",
   "main": "./dist/scratch-gui.js",
   "scripts": {
@@ -16,12 +16,15 @@
     "test:smoke": "jest --runInBand test[\\\\/]smoke",
     "watch": "webpack --colors --watch"
   },
-  "author": "Massachusetts Institute of Technology",
+  "author": "Glitchy Scratch Contributors",
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/LLK/scratch-gui#readme",
+  "homepage": "https://github.com/Glitchy-Scratch/gui#readme",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/LLK/scratch-gui.git"
+    "url": "git+ssh://git@github.com/Glitchy-Scratch/gui.git"
+  },
+  "engines": {
+    "node": ">=10"
   },
   "dependencies": {
     "arraybuffer-loader": "^1.0.8",

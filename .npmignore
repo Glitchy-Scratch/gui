@@ -19,3 +19,6 @@ npm-*
 
 # generated translation files
 /translations
+
+# GitHub configuration
+/.github

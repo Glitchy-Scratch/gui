@@ -4,7 +4,7 @@
   "description": "GraphicaL User Interface for creating and running Scratch 3.0 projects",
   "main": "./dist/scratch-gui.js",
   "scripts": {
-    "build": "npm run clean && webpack --color --bail",
+    "build": "npm run clean && webpack --color",
     "clean": "rimraf ./build && mkdirp build && rimraf ./dist && mkdirp dist",
     "i18n:push": "tx-push-src scratch-editor interface translations/en.json",
     "i18n:src": "rimraf ./translations/messages/src && babel src > tmp.js && rimraf tmp.js && build-i18n-src ./translations/messages/src ./translations/ && npm run i18n:push",

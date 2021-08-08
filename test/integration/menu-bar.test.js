@@ -61,7 +61,7 @@ describe('Menu bar settings', () => {
         await loadUri(uri);
         await clickXpath('//img[@alt="Scratch"]');
         const currentUrl = await driver.getCurrentUrl();
-        await expect(currentUrl).toEqual('https://scratch.mit.edu/');
+        await expect(currentUrl).toEqual('https://glitchy-scratch.js.org/');
     });
 
     test('(GH#4064) Project name should be editable', async () => {

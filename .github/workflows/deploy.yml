@@ -26,8 +26,10 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - name: Setup, Build and Install Dependencies using Node.JS
-        run: npm ci && npm run build
+      - name: Install Dependencies using NPM
+        run: npm install --no-optional
+      - name: Run the build
+        run: npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

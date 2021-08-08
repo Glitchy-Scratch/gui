@@ -14,7 +14,7 @@
     "test:lint": "eslint . --ext .js,.jsx",
     "test:unit": "jest test[\\\\/]unit",
     "test:smoke": "jest --runInBand test[\\\\/]smoke",
-    "watch": "webpack --colors --watch"
+    "watch": "webpack --color --watch"
   },
   "author": "Glitchy Scratch Contributors",
   "license": "BSD-3-Clause",

@@ -4,7 +4,7 @@
     This prevents conflicts between identical z-index values in different components.
 */
 
-/* Toolbox z-index: 40; set in scratch-blocks */
+/* Toolbox z-index: 40; set in glitchyscratch-blocks */
 $z-index-extension-button: 42;
 $z-index-stage-indicator: 45;
 $z-index-add-button: 46;

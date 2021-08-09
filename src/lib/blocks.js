@@ -1,4 +1,4 @@
-import ScratchBlocks from 'scratch-blocks';
+import ScratchBlocks from 'glitchyscratch-blocks';
 
 /**
  * Connect scratch blocks with the vm

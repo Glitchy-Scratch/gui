@@ -1,4 +1,4 @@
-import ScratchBlocks from 'glitchyscratch-blocks';
+import ScratchBlocks from 'glitscratch-blocks';
 
 const categorySeparator = '<sep gap="36"/>';
 

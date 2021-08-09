@@ -29,9 +29,9 @@ const base = {
     resolve: {
         symlinks: false,
         fallback: {
-            'buffer': false,
-            'stream': false
-        },
+            buffer: false,
+            stream: false
+        }
     },
     module: {
         rules: [{

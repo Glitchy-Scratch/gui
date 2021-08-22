@@ -165,7 +165,7 @@ module.exports = [
                 to: 'static'
             }]),
             new CopyWebpackPlugin([{
-                from: 'node_modules/glitchyscratch-blocks/media',
+                from: 'node_modules/scratch-blocks/media',
                 to: 'static/blocks-media'
             }]),
             new CopyWebpackPlugin([{

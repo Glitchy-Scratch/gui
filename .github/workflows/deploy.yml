@@ -28,6 +28,8 @@ jobs:
             ${{ runner.os }}-
       - name: Install Dependencies using NPM
         run: npm install --no-optional
+      - name: Install scratch-blocks (a hack to fix the build for now)
+        run: npm install scratch-blocks
       - name: Run the build
         run: npm run build
       - name: Deploy

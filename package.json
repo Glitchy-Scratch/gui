@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "arraybuffer-loader": "^1.0.8",
-    "autoprefixer": "^9.0.1",
+    "autoprefixer": "^9.8.8",
     "base64-loader": "1.0.0",
     "bowser": "1.9.4",
     "classnames": "2.3.1",

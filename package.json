@@ -106,7 +106,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
-    "browserslist": "^4.17.6",
+    "browserslist": "^4.20.0",
     "chromedriver": "94.0.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "1.15.6",

@@ -107,7 +107,7 @@
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
     "browserslist": "^4.17.6",
-    "chromedriver": "94.0.0",
+    "chromedriver": "105.0.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "1.15.6",
     "eslint": "^5.7.0",

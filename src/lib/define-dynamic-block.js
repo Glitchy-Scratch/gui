@@ -24,9 +24,9 @@ const defineDynamicBlock = (ScratchBlocks, categoryInfo, staticBlockInfo, extend
             colourSecondary: categoryInfo.color2,
             colourTertiary: categoryInfo.color3
         };
-        // There is a glitchyscratch-blocks / Blockly extension called "scratch_extension" which adjusts the styling of
+        // There is a scratch-blocks / Blockly extension called "scratch_extension" which adjusts the styling of
         // blocks to allow for an icon, a feature of Scratch extension blocks. However, Scratch "core" extension
-        // blocks don't have icons and so they should not use 'scratch_extension'. Adding a glitchyscratch-blocks
+        // blocks don't have icons and so they should not use 'scratch_extension'. Adding a scratch-blocks
         // extension after `jsonInit` isn't fully supported (?), so we decide now whether there will be an icon.
         if (staticBlockInfo.blockIconURI || categoryInfo.blockIconURI) {
             blockJson.extensions = ['scratch_extension'];

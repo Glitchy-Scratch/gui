@@ -424,7 +424,7 @@ class Blocks extends React.Component {
             }
         };
 
-        // glitchyscratch-blocks implements a menu or custom field as a special kind of block ("shadow" block)
+        // scratch-blocks implements a menu or custom field as a special kind of block ("shadow" block)
         // these actually define blocks and MUST run regardless of the UI state
         defineBlocks(
             Object.getOwnPropertyNames(categoryInfo.customFieldTypes)
@@ -481,7 +481,7 @@ class Blocks extends React.Component {
     /*
      * Pass along information about proposed name and variable options (scope and isCloud)
      * and additional potentially conflicting variable names from the VM
-     * to the variable validation prompt callback used in glitchyscratch-blocks.
+     * to the variable validation prompt callback used in scratch-blocks.
      */
     handlePromptCallback (input, variableOptions) {
         this.state.prompt.callback(

@@ -16,7 +16,7 @@ class DragRecognizer {
     constructor ({
         onDrag = (() => {}),
         onDragEnd = (() => {}),
-        touchDragAngle = 70, // Angle and distance thresholds are the same as glitchyscratch-blocks
+        touchDragAngle = 70, // Angle and distance thresholds are the same as scratch-blocks
         distanceThreshold = 3
     }) {
         this._onDrag = onDrag;

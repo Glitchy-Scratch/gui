@@ -3,10 +3,8 @@ updates:
 - package-ecosystem: npm
   directory: "/"
   schedule:
-    interval: daily
+    interval: weekly
     time: "11:00"
-  open-pull-requests-limit: 99
-  reviewers:
-    - r4356th
+  open-pull-requests-limit: 30
   versioning-strategy: increase
     

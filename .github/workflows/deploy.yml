@@ -12,7 +12,7 @@ jobs:
       - name: Setup Node.JS Environment
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Cache NPM Packages
@@ -28,8 +28,6 @@ jobs:
             ${{ runner.os }}-
       - name: Install Dependencies using NPM
         run: npm install --no-optional
-      - name: Install scratch-blocks (a hack to fix the build for now)
-        run: npm install scratch-blocks
       - name: Run the build
         run: npm run build
       - name: Deploy

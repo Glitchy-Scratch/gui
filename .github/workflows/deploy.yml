@@ -15,7 +15,7 @@ jobs:
           node-version: 16
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Cache NPM Packages
+      - name: Cache NPM packages
         uses: actions/cache@v2
         env:
           cache-name: cache-node-modules
@@ -26,8 +26,8 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - name: Install Dependencies using NPM
-        run: npm install --no-optional
+      - name: Install dependencies using NPM
+        run: npm install --legacy-peer-deps --omit=optional
       - name: Run the build
         run: npm run build
       - name: Deploy

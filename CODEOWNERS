@@ -1,5 +1,0 @@
-# GUI Team has access to most things on this repository
-*     @gui-team
-
-# Deployment Team has control over CD, CI and friends
-.github/workflows .eslintrc.json .eslintignore webpack.config.js .babelrc .browserslistrc   @deployment-team

@@ -61,7 +61,7 @@
     "raw-loader": "^4.0.2",
     "react": "^16.0.0",
     "react-contextmenu": "2.9.4",
-    "react-dom": "^16.13.0",
+    "react-dom": "^16.2.1",
     "react-draggable": "3.0.5",
     "react-ga": "2.5.3",
     "react-intl": "2.9.0",
@@ -92,8 +92,7 @@
     "xhr": "2.6.0"
   },
   "peerDependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.13.0"
+    "react": "^16.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",

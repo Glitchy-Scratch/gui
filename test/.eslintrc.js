@@ -6,6 +6,11 @@ module.exports = {
     },
     plugins: ['jest'],
     rules: {
-        'react/prop-types': 0
+        'react/prop-types': 0,
+        'jest/expect-expect': 0,
+        'jest/no-disabled-tests': 0,
+        'jest/no-conditional-expect': 0,
+        'jest/valid-title': 0,
+        'jest/no-done-callback': 0,
     }
 };

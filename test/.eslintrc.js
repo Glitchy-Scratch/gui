@@ -12,5 +12,6 @@ module.exports = {
         'jest/no-conditional-expect': 0,
         'jest/valid-title': 0,
         'jest/no-done-callback': 0,
+        'jest/no-mocks-import': 0,
     }
 };

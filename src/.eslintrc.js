@@ -19,6 +19,8 @@ module.exports = {
         'react/jsx-no-literals': 'error',
         'no-prototype-builtins': 'off',
         'no-redeclare': 'off',
+        'react/forbid-prop-types': 'off',
+        'react/no-unknown-property': 'off',
         'no-confusing-arrow': ['error', {
             allowParens: true
         }]

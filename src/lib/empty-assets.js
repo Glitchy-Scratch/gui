@@ -27,16 +27,6 @@ const emptyCostume = name => ({
  */
 const emptySprite = (name, soundName, costumeName) => ({
     objName: name,
-    sounds: [
-        {
-            soundName: soundName,
-            soundID: -1,
-            md5: '83a9787d4cb6f3b7632b4ddfebf74367.wav',
-            sampleCount: 258,
-            rate: 11025,
-            format: ''
-        }
-    ],
     costumes: [
         {
             costumeName: costumeName,

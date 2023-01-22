@@ -23,9 +23,6 @@
     "type": "git",
     "url": "git+ssh://git@github.com/Glitchy-Scratch/gui.git"
   },
-  "engines": {
-    "node": ">=10"
-  },
   "dependencies": {
     "arraybuffer-loader": "^1.0.8",
     "autoprefixer": "^9.0.1",

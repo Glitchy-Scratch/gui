@@ -28,7 +28,7 @@ const UnavailableStep = props => (
                     </div>
                     <div className={styles.helpStepText}>
                         <FormattedMessage
-                            defaultMessage="Make sure you have Scratch Link installed and running"
+                            defaultMessage="Make sure you have Glitchy Scratch Link installed and running"
                             description="Message for getting Scratch Link installed"
                             id="gui.connection.unavailable.installscratchlink"
                         />

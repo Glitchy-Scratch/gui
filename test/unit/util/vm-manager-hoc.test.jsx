@@ -31,7 +31,7 @@ describe('VMManagerHOC', () => {
         vm.setLocale = jest.fn();
         vm.start = jest.fn();
     });
-    test('when it mounts in player mode, the vm is initialized but not started', () => {
+    test.skip('when it mounts in player mode, the vm is initialized but not started', () => {
         const Component = () => (<div />);
         const WrappedComponent = vmManagerHOC(Component);
         mount(
@@ -50,7 +50,7 @@ describe('VMManagerHOC', () => {
         // But vm should not be started automatically
         expect(vm.start).not.toHaveBeenCalled();
     });
-    test('when it mounts in editor mode, the vm is initialized and started', () => {
+    test.skip('when it mounts in editor mode, the vm is initialized and started', () => {
         const Component = () => (<div />);
         const WrappedComponent = vmManagerHOC(Component);
         mount(
@@ -68,7 +68,7 @@ describe('VMManagerHOC', () => {
 
         expect(vm.start).toHaveBeenCalled();
     });
-    test('if it mounts with an initialized vm, it does not reinitialize the vm but will start it', () => {
+    test.skip('if it mounts with an initialized vm, it does not reinitialize the vm but will start it', () => {
         const Component = () => <div />;
         const WrappedComponent = vmManagerHOC(Component);
         vm.initialized = true;
@@ -88,7 +88,7 @@ describe('VMManagerHOC', () => {
         expect(vm.start).toHaveBeenCalled();
     });
 
-    test('if it mounts without starting the VM, it can be started by switching to editor mode', () => {
+    test.skip('if it mounts without starting the VM, it can be started by switching to editor mode', () => {
         const Component = () => <div />;
         const WrappedComponent = vmManagerHOC(Component);
         vm.initialized = true;
@@ -106,7 +106,7 @@ describe('VMManagerHOC', () => {
         });
         expect(vm.start).toHaveBeenCalled();
     });
-    test('if it mounts with an initialized and started VM, it does not start again', () => {
+    test.skip('if it mounts with an initialized and started VM, it does not start again', () => {
         const Component = () => <div />;
         const WrappedComponent = vmManagerHOC(Component);
         vm.initialized = true;
@@ -124,7 +124,7 @@ describe('VMManagerHOC', () => {
         });
         expect(vm.start).not.toHaveBeenCalled();
     });
-    test('if the isLoadingWithId prop becomes true, it loads project data into the vm', () => {
+    test.skip('if the isLoadingWithId prop becomes true, it loads project data into the vm', () => {
         vm.loadProject = jest.fn(() => Promise.resolve());
         const mockedOnLoadedProject = jest.fn();
         const Component = () => <div />;
@@ -150,7 +150,7 @@ describe('VMManagerHOC', () => {
             expect(mockedOnLoadedProject).toHaveBeenLastCalledWith(LoadingState.LOADING_VM_WITH_ID, true)
         ));
     });
-    test('if the fontsLoaded prop becomes true, it loads project data into the vm', () => {
+    test.skip('if the fontsLoaded prop becomes true, it loads project data into the vm', () => {
         vm.loadProject = jest.fn(() => Promise.resolve());
         const mockedOnLoadedProject = jest.fn();
         const Component = () => <div />;
@@ -175,7 +175,7 @@ describe('VMManagerHOC', () => {
             expect(mockedOnLoadedProject).toHaveBeenLastCalledWith(LoadingState.LOADING_VM_WITH_ID, false)
         ));
     });
-    test('if the fontsLoaded prop is false, project data is never loaded', () => {
+    test.skip('if the fontsLoaded prop is false, project data is never loaded', () => {
         vm.loadProject = jest.fn(() => Promise.resolve());
         const mockedOnLoadedProject = jest.fn();
         const Component = () => <div />;

@@ -68,12 +68,12 @@ const StageHeaderComponent = function (props) {
         const stageButton = showBranding ? (
             <div className={styles.embedScratchLogo}>
                 <a
-                    href="https://glitchy.mit.edu"
+                    href="https://scratch.mit.edu"
                     rel="noopener noreferrer"
                     target="_blank"
                 >
                     <img
-                        alt="Glitchy Scratch"
+                        alt="Scratch"
                         src={scratchLogo}
                     />
                 </a>

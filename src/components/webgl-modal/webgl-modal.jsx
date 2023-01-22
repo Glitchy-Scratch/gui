@@ -69,17 +69,17 @@ const WebGlModal = ({intl, ...props}) => (
                 <div className={styles.faqLinkText}>
                     <FormattedMessage
                         defaultMessage="To learn more, go to the {previewFaqLink}."
-                        description="Glitchy Scratch 3.0 FAQ description"
+                        description="Scratch 3.0 FAQ description"
                         id="gui.webglModal.previewfaq"
                         values={{
                             previewFaqLink: (
                                 <a
                                     className={styles.faqLink}
-                                    href="//glitchy-scratch.js.org/3faq"
+                                    href="//scratch.mit.edu/3faq"
                                 >
                                     <FormattedMessage
                                         defaultMessage="FAQ"
-                                        description="link to Glitchy Scratch 3.0 FAQ page"
+                                        description="link to Scratch 3.0 FAQ page"
                                         id="gui.webglModal.previewfaqlinktext"
                                     />
                                 </a>

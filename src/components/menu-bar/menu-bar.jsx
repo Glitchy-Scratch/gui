@@ -394,7 +394,7 @@ class MenuBar extends React.Component {
                     <div className={styles.fileGroup}>
                         <div className={classNames(styles.menuBarItem)}>
                             <img
-                                alt="Glitcratch"
+                                alt="Scratch"
                                 className={classNames(styles.scratchLogo, {
                                     [styles.clickable]: typeof this.props.onClickLogo !== 'undefined'
                                 })}
@@ -706,8 +706,8 @@ class MenuBar extends React.Component {
                                     onMouseUp={this.props.onOpenRegistration}
                                 >
                                     <FormattedMessage
-                                        defaultMessage="Join Glitchy Scratch"
-                                        description="Link for creating a Gratch account"
+                                        defaultMessage="Join Scratch"
+                                        description="Link for creating a Scratch account"
                                         id="gui.menuBar.joinScratch"
                                     />
                                 </div>
@@ -721,7 +721,7 @@ class MenuBar extends React.Component {
                                 >
                                     <FormattedMessage
                                         defaultMessage="Sign in"
-                                        description="Link for signing in to your Glitchy Scratch account"
+                                        description="Link for signing in to your Scratch account"
                                         id="gui.menuBar.signIn"
                                     />
                                     <LoginDropdown

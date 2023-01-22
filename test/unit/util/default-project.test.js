@@ -4,7 +4,7 @@ describe('defaultProject', () => {
     // This test ensures that the assets referenced in the default project JSON
     // do not get out of sync with the raw assets that are included alongside.
     // see https://github.com/LLK/scratch-gui/issues/4844
-    test.skip('assets referenced by the project are included', () => {
+    test('assets referenced by the project are included', () => {
         const translatorFn = () => '';
         const defaultProject = defaultProjectGenerator(translatorFn);
         const includedAssetIds = defaultProject.map(obj => obj.id);

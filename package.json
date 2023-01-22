@@ -109,7 +109,7 @@
     "chromedriver": "^107.0.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "1.15.7",
-    "eslint": "^7.5.0",
+    "eslint": "^8.32.0",
     "eslint-config-scratch": "^8.0.0",
     "eslint-import-resolver-webpack": "^0.13.2",
     "eslint-plugin-import": "^2.27.5",

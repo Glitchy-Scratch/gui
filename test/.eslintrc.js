@@ -13,5 +13,7 @@ module.exports = {
         'jest/valid-title': 0,
         'jest/no-done-callback': 0,
         'jest/no-mocks-import': 0,
+        'require-atomic-updates': 'off',
+        'no-redeclare': 'off'
     }
 };

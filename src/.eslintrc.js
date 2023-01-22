@@ -18,6 +18,7 @@ module.exports = {
         'import/no-nodejs-modules': 'error',
         'react/jsx-no-literals': 'error',
         'no-prototype-builtins': 'off',
+        'no-redeclare': 'off',
         'no-confusing-arrow': ['error', {
             allowParens: true
         }]

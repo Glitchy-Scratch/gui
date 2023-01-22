@@ -194,7 +194,7 @@ export default [
                 id="gui.extension.microbit.connectingMessage"
             />
         ),
-        helpLink: 'https://glitchy-scratch.js.org/microbit'
+        helpLink: 'https://scratch.mit.edu/microbit'
     },
     {
         name: 'LEGO MINDSTORMS EV3',

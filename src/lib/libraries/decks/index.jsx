@@ -51,6 +51,9 @@ import libraryCodeCartoon from './thumbnails/code-a-cartoon.jpg';
 // Talking Tales
 import libraryTalking from './thumbnails/talking.png';
 
+// Sprite Mystery
+import librarySpriteMystery from './thumbnails/sprite-mystery.png';
+
 // Videos
 import recordASound from './thumbnails/record-a-sound.jpg';
 import glideAroundThumb from './thumbnails/glide-around.jpg';
@@ -61,6 +64,8 @@ import addBackdropThumb from './thumbnails/add-backdrop.jpg';
 import addEffectsThumb from './thumbnails/add-effects.jpg';
 import moveArrowKeysThumb from './thumbnails/move-arrow-keys.jpg';
 import spinThumb from './thumbnails/spin.jpg';
+
+import teachScratchToYourCatThumb from './thumbnails/teach-scratch-to-your-cat.jpg';
 
 export default {
 
@@ -345,7 +350,24 @@ export default {
         ],
         urlId: 'imagine'
     },
-    
+
+    'teach-scratch-to-your-cat': {
+        name: (
+            'Teach Scratch to Your Cat'
+        ),
+        img: teachScratchToYourCatThumb,
+        tags: [],
+        steps: [{
+            video: 'teach-scratch-to-your-cat'
+        }, {
+            deckIds: [
+                'intro-move-sayhello',
+                'animate-a-name'
+            ]
+        }],
+        urlId: 'teach-scratch-to-your-cat'
+    },
+
     'Make-Music': {
         name: (
             <FormattedMessage
@@ -1477,6 +1499,21 @@ export default {
         }
         ],
         urlId: 'animations-that-talk'
+    },
+
+    'sprite-mystery': {
+        name: 'How to Find a Sprite',
+        img: librarySpriteMystery,
+        steps: [{
+            video: 'sprite-mystery'
+        }, {
+            deckIds: [
+                'intro-move-sayhello',
+                'add-sprite'
+            ]
+        }
+        ],
+        urlId: 'sprite-mystery'
     },
 
     'talking': {

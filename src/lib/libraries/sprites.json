@@ -2034,7 +2034,9 @@
             "kitty",
             "kitten",
             "animals",
-            "mammal"
+            "mammal",
+            "secret",
+            "april fools"
         ],
         "isStage": false,
         "variables": {},
@@ -2047,6 +2049,15 @@
                 "dataFormat": "svg",
                 "rotationCenterX": 87,
                 "rotationCenterY": 39
+            },
+            {
+                "assetId": "054fd733b35a6566f2e35f840730d336",
+                "name": "rocket cat 2",
+                "bitmapResolution": 1,
+                "md5ext": "054fd733b35a6566f2e35f840730d336.svg",
+                "dataFormat": "svg",
+                "rotationCenterX": 92.26858520507812,
+                "rotationCenterY": 60.578433990478516
             }
         ],
         "sounds": [

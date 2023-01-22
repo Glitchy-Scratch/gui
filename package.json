@@ -59,7 +59,7 @@
     "prop-types": "^15.8.1",
     "query-string": "^5.1.1",
     "raw-loader": "^4.0.2",
-    "react": "^16.3.0",
+    "react": "^16.14.0",
     "react-contextmenu": "2.14.0",
     "react-dom": "^16.2.1",
     "react-draggable": "3.0.5",
@@ -92,7 +92,7 @@
     "xhr": "2.6.0"
   },
   "peerDependencies": {
-    "react": "^16.3.0"
+    "react": "^16.14.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import bindAll from 'lodash.bindall';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -11,13 +12,13 @@ import styles from './telemetry-modal.css';
 const messages = defineMessages({
     label: {
         id: 'gui.telemetryOptIn.label',
-        defaultMessage: 'Report statistics to improve Scratch',
-        description: 'Scratch 3.0 telemetry modal label - for accessibility'
+        defaultMessage: 'Report statistics to improve Glitchy Scratch',
+        description: 'Glitchy Scratch 3.0 telemetry modal label - for accessibility'
     },
     bodyText1: {
-        defaultMessage: 'The Scratch Team is always looking to better understand how Scratch is used around the ' +
-            'world. To help support this effort, you can allow Scratch to automatically send usage information to ' +
-            'the Scratch Team.',
+        defaultMessage: 'The Glitchy Team is always looking to better understand how Glitchy Scratch is used around the ' +
+            'world. To help support this effort, you can allow Glitchy Scratch to automatically send usage information to ' +
+            'the Glitchy Scratch Team.',
         description: 'First paragraph of body text for telemetry opt-in modal',
         id: 'gui.telemetryOptIn.body1'
     },
@@ -30,11 +31,11 @@ const messages = defineMessages({
     },
     privacyPolicyLink: {
         defaultMessage: 'Privacy Policy',
-        description: 'Link to the Scratch privacy policy',
+        description: 'Link to the Glitchy Scratch privacy policy',
         id: 'gui.telemetryOptIn.privacyPolicyLink'
     },
     optInText: {
-        defaultMessage: 'Share my usage data with the Scratch Team',
+        defaultMessage: 'Share my usage data with the Glitchy Scratch Team',
         description: 'Text for telemetry modal opt-in button',
         id: 'gui.telemetryOptIn.optInText'
     },
@@ -44,7 +45,7 @@ const messages = defineMessages({
         id: 'gui.telemetryOptIn.optInTooltip'
     },
     optOutText: {
-        defaultMessage: 'Do not share my usage data with the Scratch Team',
+        defaultMessage: 'Do not share my usage data with the Glitchy Scratch Team',
         description: 'Text for telemetry modal opt-in button',
         id: 'gui.telemetryOptIn.optOutText'
     },
@@ -149,7 +150,7 @@ class TelemetryModal extends React.PureComponent {
                         values={{
                             privacyPolicyLink: (<a
                                 className={styles.privacyPolicyLink}
-                                href="https://scratch.mit.edu/privacy_policy/"
+                                href="https://Glitchyscratch.mit.edu/privacy_policy/"
                                 onClick={this.props.onShowPrivacyPolicy}
                                 target="_blank"
                                 rel="noopener noreferrer"
